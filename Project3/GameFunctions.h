@@ -18,3 +18,8 @@ void GameIntro();
 //branch 1
 void intoTheForest();
 void intoTheOcean();
+
+//forest branch 1
+void outOfForest();
+void deeperForest();
+
