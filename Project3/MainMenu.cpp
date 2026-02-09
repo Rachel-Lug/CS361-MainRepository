@@ -27,7 +27,7 @@ int main() {
 	cout << "Load Game (L)" << endl;
 	cout << "Settings (S)" << endl;
 	cout << "Exit (E)" << endl;
-	cout << "enter value here: " << endl;
+	cout << "enter value here: ";
 
 	cin >> userValue;
 	userValue = toupper(userValue);
@@ -37,6 +37,19 @@ int main() {
 		cout << "Invalid entry. Please enter N, L, S, or E: ";
 		cin >> userValue;
 		userValue = toupper(userValue);
+	}
+
+	if (userValue == 'N') {
+
+	}
+	else if (userValue == 'L') {
+
+	}
+	else if (userValue == 'S') {
+
+	}
+	else if (userValue == 'E') {
+
 	}
 
 }
