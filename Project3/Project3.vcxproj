@@ -21,8 +21,10 @@
   <ItemGroup>
     <ClCompile Include="GameIntro.cpp" />
     <ClCompile Include="MainMenu.cpp" />
+    <ClCompile Include="universalValues.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GameFunctions.h" />
     <ClInclude Include="universalValues.h" />
   </ItemGroup>
   <ItemGroup>
