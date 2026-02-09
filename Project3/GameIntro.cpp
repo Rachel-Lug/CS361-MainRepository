@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include "universalValues.h"
+#include "GameFunctions.h"
 
 char userOptionValue;
 
@@ -28,10 +29,10 @@ void GameIntro()
 	}
 
 	if (userOptionValue == option1) {
-
+		intoTheForest();
 	}
 	else if (userOptionValue == option2) {
-
+		intoTheOcean();
 	}
 
 }

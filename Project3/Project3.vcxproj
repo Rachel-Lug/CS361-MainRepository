@@ -21,6 +21,8 @@
   <ItemGroup>
     <ClCompile Include="GameIntro.cpp" />
     <ClCompile Include="MainMenu.cpp" />
+    <ClCompile Include="Forest.cpp" />
+    <ClCompile Include="Ocean.cpp" />
     <ClCompile Include="universalValues.cpp" />
   </ItemGroup>
   <ItemGroup>

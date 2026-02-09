@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\ForestFiles">
+      <UniqueIdentifier>{c28eeb8a-cd76-4e06-bb3e-4c66d18b6484}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\OceanFiles">
+      <UniqueIdentifier>{eb26506c-7fe7-4fc6-b140-94940a8878e4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainMenu.cpp">
@@ -23,6 +29,12 @@
     </ClCompile>
     <ClCompile Include="universalValues.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Forest.cpp">
+      <Filter>Source Files\ForestFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Ocean.cpp">
+      <Filter>Source Files\OceanFiles</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

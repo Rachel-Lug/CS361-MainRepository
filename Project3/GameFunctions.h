@@ -12,4 +12,9 @@ void ClearScreen()
 #endif	
 }
 
+//introduction/plot
 void GameIntro();
+
+//branch 1
+void intoTheForest();
+void intoTheOcean();
