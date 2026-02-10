@@ -22,6 +22,9 @@ void GameIntro();
 void intoTheForest();
 void intoTheOcean();
 
+//---------------------------------------------------------------------------------------------------
+//forest
+
 //forest branch 1
 void outOfForest();
 void deeperForest();
@@ -34,4 +37,17 @@ void roundTheMount();	//phoenix
 void cave();		//nandi
 void woods();		//white stag
 
+//-------------------------------------------------------------------------------------------
+//ocean
 
+//ocean branch 1
+void theIsland();
+void moreSailing();
+
+//island branch
+void flowers(); //fairies
+void beach();	//lochness
+
+//sailing bramch
+void structure();	//kracken
+void openwater();	//sirens

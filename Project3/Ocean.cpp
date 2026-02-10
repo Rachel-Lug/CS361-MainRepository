@@ -23,10 +23,9 @@ void intoTheOcean()
 	}
 
 	if (usersInput == option1) {
-
+		theIsland();
 	}
 	else if (usersInput == option2) {
-
+		moreSailing();
 	}
-
 }

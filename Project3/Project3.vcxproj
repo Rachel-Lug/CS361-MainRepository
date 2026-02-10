@@ -19,17 +19,23 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="beach.cpp" />
     <ClCompile Include="cave.cpp" />
     <ClCompile Include="deep&amp;deeper.cpp" />
+    <ClCompile Include="flowers.cpp" />
     <ClCompile Include="GameIntro.cpp" />
     <ClCompile Include="grove.cpp" />
+    <ClCompile Include="islandparadise.cpp" />
     <ClCompile Include="MainMenu.cpp" />
     <ClCompile Include="Forest.cpp" />
+    <ClCompile Include="moreSailing.cpp" />
     <ClCompile Include="Ocean.cpp" />
     <ClCompile Include="outForest.cpp" />
     <ClCompile Include="round.cpp" />
+    <ClCompile Include="struct.cpp" />
     <ClCompile Include="Summit.cpp" />
     <ClCompile Include="universalValues.cpp" />
+    <ClCompile Include="water.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameFunctions.h" />

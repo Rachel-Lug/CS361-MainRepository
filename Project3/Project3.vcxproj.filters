@@ -25,6 +25,12 @@
     <Filter Include="Source Files\ForestFiles\out-mt">
       <UniqueIdentifier>{66c948eb-80af-4a97-b90d-3d43884a4e18}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\OceanFiles\sailing">
+      <UniqueIdentifier>{71d667f8-d07c-4e07-aa2c-6b1ff5b025a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\OceanFiles\island">
+      <UniqueIdentifier>{66b7858e-ad31-4c7b-bb9a-ff82b167b430}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainMenu.cpp">
@@ -59,6 +65,24 @@
     </ClCompile>
     <ClCompile Include="round.cpp">
       <Filter>Source Files\ForestFiles\out-mt</Filter>
+    </ClCompile>
+    <ClCompile Include="islandparadise.cpp">
+      <Filter>Source Files\OceanFiles\island</Filter>
+    </ClCompile>
+    <ClCompile Include="moreSailing.cpp">
+      <Filter>Source Files\OceanFiles\sailing</Filter>
+    </ClCompile>
+    <ClCompile Include="flowers.cpp">
+      <Filter>Source Files\OceanFiles\island</Filter>
+    </ClCompile>
+    <ClCompile Include="beach.cpp">
+      <Filter>Source Files\OceanFiles\island</Filter>
+    </ClCompile>
+    <ClCompile Include="struct.cpp">
+      <Filter>Source Files\OceanFiles\sailing</Filter>
+    </ClCompile>
+    <ClCompile Include="water.cpp">
+      <Filter>Source Files\OceanFiles\sailing</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
