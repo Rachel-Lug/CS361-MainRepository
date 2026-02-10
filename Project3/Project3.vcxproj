@@ -19,10 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="cave.cpp" />
+    <ClCompile Include="deep&amp;deeper.cpp" />
     <ClCompile Include="GameIntro.cpp" />
+    <ClCompile Include="grove.cpp" />
     <ClCompile Include="MainMenu.cpp" />
     <ClCompile Include="Forest.cpp" />
     <ClCompile Include="Ocean.cpp" />
+    <ClCompile Include="outForest.cpp" />
+    <ClCompile Include="round.cpp" />
+    <ClCompile Include="Summit.cpp" />
     <ClCompile Include="universalValues.cpp" />
   </ItemGroup>
   <ItemGroup>

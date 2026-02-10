@@ -19,6 +19,12 @@
     <Filter Include="Source Files\OceanFiles">
       <UniqueIdentifier>{eb26506c-7fe7-4fc6-b140-94940a8878e4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\ForestFiles\deeper">
+      <UniqueIdentifier>{feee8d1f-b218-4601-ac61-f934be10e2a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ForestFiles\out-mt">
+      <UniqueIdentifier>{66c948eb-80af-4a97-b90d-3d43884a4e18}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainMenu.cpp">
@@ -35,6 +41,24 @@
     </ClCompile>
     <ClCompile Include="Ocean.cpp">
       <Filter>Source Files\OceanFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="deep&amp;deeper.cpp">
+      <Filter>Source Files\ForestFiles\deeper</Filter>
+    </ClCompile>
+    <ClCompile Include="cave.cpp">
+      <Filter>Source Files\ForestFiles\deeper</Filter>
+    </ClCompile>
+    <ClCompile Include="grove.cpp">
+      <Filter>Source Files\ForestFiles\deeper</Filter>
+    </ClCompile>
+    <ClCompile Include="outForest.cpp">
+      <Filter>Source Files\ForestFiles\out-mt</Filter>
+    </ClCompile>
+    <ClCompile Include="Summit.cpp">
+      <Filter>Source Files\ForestFiles\out-mt</Filter>
+    </ClCompile>
+    <ClCompile Include="round.cpp">
+      <Filter>Source Files\ForestFiles\out-mt</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

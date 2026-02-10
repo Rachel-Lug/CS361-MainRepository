@@ -28,9 +28,9 @@ void intoTheForest()
 	}
 
 	if (userInput == option1) {
-		outOfForest();
+		deeperForest();
 	}
 	else if (userInput == option2) {
-		deeperForest();
+		outOfForest();
 	}
 }

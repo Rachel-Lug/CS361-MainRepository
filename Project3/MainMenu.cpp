@@ -18,7 +18,7 @@ using namespace std;
 
 char userValue;
 
-int main() {
+void main() {
 
 	//initial instructions
 	cout << "Hello and welcome to the Mysterious Land of Ur!" << endl;
