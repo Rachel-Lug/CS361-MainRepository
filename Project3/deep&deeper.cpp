@@ -14,6 +14,8 @@ void deeperForest()
 
 	cout << option1 << " the cave" << endl;
 	cout << option2 << " deeper into the woods" << endl;
+	cout << "enter here: ";
+
 	cin >> someInput;
 	someInput = toupper(someInput);
 
