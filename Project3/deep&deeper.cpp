@@ -9,6 +9,13 @@ char someInput;
 
 void deeperForest()
 {
+	//clear screen
+#ifdef _WIN32
+	system("cls");
+#else
+	system("clear");
+#endif	
+
 	cout << "As you go deeper into the woods you see cave that is so dark you can't see inside and" << endl;
 	cout << "another small kind of hidden path that leads even deeper into the woods" << endl;
 

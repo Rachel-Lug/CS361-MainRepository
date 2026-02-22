@@ -10,6 +10,13 @@ char Val;
 
 void openwater()
 {
+	//clear screen
+#ifdef _WIN32
+	system("cls");
+#else
+	system("clear");
+#endif	
+
 	cout << "As you continue sailing you start to hear voices. Gorgeous voices singing some old sea shanty you think" << endl;
 	cout << "you have heard before. All of a sudden you feel lost in a dase and start walking towards the edge of" << endl;
 	cout << "the boat. You keep trying to stop but your body won't listen. You jump off the boat and the minute you " << endl;

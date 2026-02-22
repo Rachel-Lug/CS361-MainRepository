@@ -10,6 +10,13 @@ char someVal;
 
 void structure()
 {
+	//clear screen
+#ifdef _WIN32
+	system("cls");
+#else
+	system("clear");
+#endif	
+
 	cout << "You sail closer and closer to the structure when all of a sudden it starts raining." << endl;
 	cout << "That's strange it has been sunny until now. As you slow down around this structure suddenly" << endl;
 	cout << "huge tenticles come out of the water crushing your boat and dragging you to the depths of the ocean." << endl;

@@ -10,6 +10,13 @@ char somewhereValue;
 
 void beach()
 {
+	//clear screen
+#ifdef _WIN32
+	system("cls");
+#else
+	system("clear");
+#endif	
+
 	cout << "As you are walking along the beach it starts to get really foggy" << endl;
 	cout << "It is starting to get to thick you almost turn around when you spot the lochness Monster!" << endl;
 	cout << "However you hear rumbling behind you, a huge boulder is rolling down the hill!" << endl;

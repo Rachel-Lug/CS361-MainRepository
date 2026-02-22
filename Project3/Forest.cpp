@@ -10,6 +10,13 @@ char userInput;
 
 void intoTheForest()
 {
+	//clear screen
+#ifdef _WIN32
+	system("cls");
+#else
+	system("clear");
+#endif	
+
 	cout << "You go into the forest and you have been walking for 2 hours straight, you must almost be at the end of the forest, right?" << endl;
 	cout << "Finally after all that time you see two paths, one seems to lead deeper into the forest the other out of the woods" << endl;
 	cout << "Do you go deeper into the woods or do you head out of the forest?" << endl;

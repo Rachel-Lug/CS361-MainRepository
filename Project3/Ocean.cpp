@@ -9,6 +9,13 @@ char usersInput;
 
 void intoTheOcean()
 {
+		//clear screen
+	#ifdef _WIN32
+		system("cls");
+	#else
+		system("clear");
+	#endif	
+
 	cout << "You find a boat and climb aboard, the minute start sailing you see and island." << endl;
 	cout << "Do you stop at this island to explore or do you continue sailing?" << endl;
 

@@ -8,6 +8,13 @@ char userOptionValue;
 
 void GameIntro()
 {
+		//clear screen
+	#ifdef _WIN32
+		system("cls");
+	#else
+		system("clear");
+	#endif	
+
 	std::cout << "You are a brave adventurer apart of this beautiful and wonderful kingdom!" << std::endl;
 	std::cout << "Strangely the King has called on you. So you set out towards the castle." << std::endl;
 	std::cout << "As you enter the throne room, it is a sight to behold. As you bow you hear the King say," << std::endl;

@@ -9,6 +9,13 @@ char goodchoice;
 
 void outOfForest()
 {
+	//clear screen
+#ifdef _WIN32
+	system("cls");
+#else
+	system("clear");
+#endif	
+
 	cout << "As you head out of the forest you see a mountain, but also a path around it" << endl;
 	cout << "Do you walk around it or try and climb the mountain?" << endl;
 

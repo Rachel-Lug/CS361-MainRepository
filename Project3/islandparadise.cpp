@@ -10,6 +10,13 @@ char userpreference;
 
 void theIsland()
 {
+	//clear screen
+#ifdef _WIN32
+	system("cls");
+#else
+	system("clear");
+#endif	
+
 	cout << "You sail towards the Island and land decently safely. In the distance you see a field of flowers" << endl;
 	cout << "But the beach is beautiful as well. Which way do you go?" << endl;
 	cout << option1 << " flowers" << endl;

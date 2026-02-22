@@ -10,6 +10,13 @@ char decisionsDecisions;
 
 void moreSailing()
 {
+	//clear screen
+#ifdef _WIN32
+	system("cls");
+#else
+	system("clear");
+#endif	
+
 	cout << "As you continue sailing you think you can see a structure in the distance" << endl;
 	cout << "Do you head towards the structure or just keep sailing?" << endl;
 	cout << option1 << " the structure" << endl;

@@ -9,6 +9,13 @@ char userDecision;
 
 void cave()
 {
+	//clear screen
+#ifdef _WIN32
+	system("cls");
+#else
+	system("clear");
+#endif	 
+
 	cout << "you go into the cave you can't really see anything. Then you remember you have a lighter!" << endl;
 	cout << "you take out your lighter and the minute you can start to see you hear this low growling behind you." << endl;
 	cout << "As you slowly turn around the growling gets louder and louder, until you see it" << endl;

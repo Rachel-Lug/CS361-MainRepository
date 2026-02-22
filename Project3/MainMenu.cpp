@@ -19,7 +19,12 @@ using namespace std;
 char userValue;
 
 void main() {
-
+        //clear screen
+    #ifdef _WIN32
+        system("cls");
+    #else
+        system("clear");
+    #endif	
 
     while (true) { 
 
@@ -27,6 +32,8 @@ void main() {
         cout << "Hello and welcome to the Mysterious Land of Ur!" << endl;
         cout << "This is a choose your own adventure game with the keys "
             << option1 << " or " << option2 << "." << endl;
+		cout << "Press " << exitGameOption << " at any time to exit the game." << endl;
+		cout << "Please select an option from the menu below: " << endl;
 
         cout << "New Game (" << newGameOption << ") " << endl;
         cout << "Load Game (" << loadGameOption << ") " << endl;

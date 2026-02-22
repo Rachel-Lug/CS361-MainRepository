@@ -9,6 +9,13 @@ char prefences;
 
 void roundTheMount()
 {
+	//clear screen
+#ifdef _WIN32
+	system("cls");
+#else
+	system("clear");
+#endif	
+
 	cout << "you go around the mountain and see a pile of ash randomly." << endl;
 	cout << "you figured you would walk up and investigate. The ashes light on fire and turn into a beautiful phoenix!" << endl;
 	cout << "but you were to close and you catch fire and die" << endl;
