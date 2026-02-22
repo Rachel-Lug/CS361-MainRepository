@@ -20,39 +20,52 @@ char userValue;
 
 void main() {
 
-	//initial instructions
-	cout << "Hello and welcome to the Mysterious Land of Ur!" << endl;
-	cout << "This is a choose your own adventure game with the keys " << option1 << " or " << option2 << "." << endl;
-	cout << "However for this first option please enter one of the following: " << endl;
 
-	//initial options to select
-	cout << "New Game (N)" << endl;
-	cout << "Load Game (L)" << endl;
-	cout << "Settings (S)" << endl;
-	cout << "Exit (E)" << endl;
-	cout << "enter value here: ";
+    while (true) { 
 
-	cin >> userValue;
-	userValue = toupper(userValue);
+        // initial instructions
+        cout << "Hello and welcome to the Mysterious Land of Ur!" << endl;
+        cout << "This is a choose your own adventure game with the keys "
+            << option1 << " or " << option2 << "." << endl;
 
-	//validate user entry
-	while (userValue != 'N' && userValue != 'L' && userValue != 'S' && userValue != 'E') {
-		cout << "Invalid entry. Please enter N, L, S, or E: ";
-		cin >> userValue;
-		userValue = toupper(userValue);
-	}
+        cout << "New Game (" << newGameOption << ") " << endl;
+        cout << "Load Game (" << loadGameOption << ") " << endl;
+        cout << "Trophies (" << trophiesMenu << ") " << endl;
+        cout << "Settings (" << settingsMenu << ") " << endl;
+        cout << "Exit (" << exitGameOption << ") " << endl;
+        cout << "enter value here: ";
 
-	if (userValue == 'N') {
-		GameIntro();
-	}
-	else if (userValue == 'L') {
+        cin >> userValue;
+        userValue = toupper(userValue);
 
-	}
-	else if (userValue == 'S') {
+        // validate entry
+        while (userValue != newGameOption && userValue != loadGameOption &&
+            userValue != settingsMenu && userValue != exitGameOption &&
+            userValue != trophiesMenu) {
+            cout << "Invalid entry. Please enter " << newGameOption << ", "
+                << loadGameOption << ", " << trophiesMenu << ", "
+                << settingsMenu << ", " << exitGameOption << endl;
+            cin >> userValue;
+            userValue = toupper(userValue);
+        }
 
-	}
-	else if (userValue == 'E') {
+        if (userValue == newGameOption) {
+            GameIntro();
+        }
+        else if (userValue == loadGameOption) {
+            // load game logic
+        }
+        else if (userValue == trophiesMenu) {
+            // trophies logic
+        }
+        else if (userValue == settingsMenu) {
+            SettingsMenu();  
+        }
+        else if (userValue == exitGameOption) {
+            break;  // exit the loop
+        }
 
-	}
+        cout << endl;  
+    }
 
 }

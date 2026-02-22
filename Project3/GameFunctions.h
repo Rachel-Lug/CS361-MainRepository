@@ -15,6 +15,10 @@ Every choice has its own file.*/
 //main menu
 void main();
 
+//settings menu
+void SettingsMenu();
+
+//--------------------------------------------------------------------------------------------------
 //introduction/plot
 void GameIntro();
 

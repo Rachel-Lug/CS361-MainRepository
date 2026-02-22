@@ -20,7 +20,7 @@ void woods()
 	cin >> decision;
 	decision = toupper(decision);
 
-	while (decision != 'E' && decision != 'M') {
+	while (decision != 'E' && decision != mainMenu) {
 		cout << "Invalid entry. enter here: ";
 		cin >> decision;
 		decision = toupper(decision);
@@ -29,7 +29,7 @@ void woods()
 	if (decision == 'E') {
 		return;
 	}
-	else if (decision == 'M') {
+	else if (decision == mainMenu) {
 		main();
 	}
 

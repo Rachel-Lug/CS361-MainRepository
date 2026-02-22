@@ -18,7 +18,7 @@ void upTheMount()
 	cin >> usersDecision;
 	usersDecision = toupper(usersDecision);
 
-	while (usersDecision != 'E' && usersDecision != 'M') {
+	while (usersDecision != 'E' && usersDecision != mainMenu) {
 		cout << "Invalid entry. enter here: ";
 		cin >> usersDecision;
 		usersDecision = toupper(usersDecision);
@@ -27,7 +27,7 @@ void upTheMount()
 	if (usersDecision == 'E') {
 		return;
 	}
-	else if (usersDecision == 'M') {
+	else if (usersDecision == mainMenu) {
 		main();
 	}
 }

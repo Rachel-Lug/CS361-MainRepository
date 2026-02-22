@@ -32,6 +32,7 @@
     <ClCompile Include="Ocean.cpp" />
     <ClCompile Include="outForest.cpp" />
     <ClCompile Include="round.cpp" />
+    <ClCompile Include="Settings.cpp" />
     <ClCompile Include="struct.cpp" />
     <ClCompile Include="Summit.cpp" />
     <ClCompile Include="universalValues.cpp" />

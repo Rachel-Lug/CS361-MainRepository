@@ -18,7 +18,7 @@ void roundTheMount()
 	cin >> prefences;
 	prefences = toupper(prefences);
 
-	while (prefences != 'E' && prefences != 'M') {
+	while (prefences != 'E' && prefences != mainMenu) {
 		cout << "Invalid entry. enter here: ";
 		cin >> prefences;
 		prefences = toupper(prefences);
@@ -27,7 +27,7 @@ void roundTheMount()
 	if (prefences == 'E') {
 		return;
 	}
-	else if (prefences == 'M') {
+	else if (prefences == mainMenu) {
 		main();
 	}
 

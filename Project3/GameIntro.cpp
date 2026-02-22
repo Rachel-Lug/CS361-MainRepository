@@ -9,8 +9,9 @@ char userOptionValue;
 void GameIntro()
 {
 	std::cout << "You are a brave adventurer apart of this beautiful and wonderful kingdom!" << std::endl;
-	std::cout << "Strangely the King has called you to his throne room to ask an inquiry of you." << std::endl;
-	std::cout << "As you head in and bow the King says to you \"After losing my Queen I am lonely, go find me a companion that I may keep as a pet\"" << std::endl;
+	std::cout << "Strangely the King has called on you. So you set out towards the castle." << std::endl;
+	std::cout << "As you enter the throne room, it is a sight to behold. As you bow you hear the King say," << std::endl;
+	std::cout << "\"After losing my Queen recently I have been very lonely, go find me a mystical creature that I may keep as a pet\"" << std::endl;
 
 	std::cout << "And so you set out on an epic Adventure!" << std::endl;
 

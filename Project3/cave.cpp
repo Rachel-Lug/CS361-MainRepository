@@ -20,7 +20,7 @@ void cave()
 	userDecision = toupper(userDecision);
 
 
-	while (userDecision != 'E' && userDecision != 'M') {
+	while (userDecision != 'E' && userDecision != mainMenu) {
 		cout << "Invalid entry. enter here: ";
 		cin >> userDecision;
 		userDecision = toupper(userDecision);
@@ -29,7 +29,7 @@ void cave()
 	if (userDecision == 'E') {
 		return;
 	}
-	else if (userDecision == 'M') {
+	else if (userDecision == mainMenu) {
 		main();
 	}
 

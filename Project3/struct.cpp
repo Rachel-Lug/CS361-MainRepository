@@ -22,7 +22,7 @@ void structure()
 	cin >> someVal;
 	someVal = toupper(someVal);
 
-	while (someVal != 'E' && someVal != 'M') {
+	while (someVal != 'E' && someVal != mainMenu) {
 		cout << "Invalid entry. enter here: ";
 		cin >> someVal;
 		someVal = toupper(someVal);
@@ -31,7 +31,7 @@ void structure()
 	if (someVal == 'E') {
 		return;
 	}
-	else if (someVal == 'M') {
+	else if (someVal == mainMenu) {
 		main();
 	}
 }

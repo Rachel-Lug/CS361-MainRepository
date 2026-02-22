@@ -27,9 +27,9 @@ void theIsland()
 	}
 
 	if (userpreference == option1) {
-		deeperForest();
+		flowers();
 	}
 	else if (userpreference == option2) {
-		outOfForest();
+		beach();
 	}
 }

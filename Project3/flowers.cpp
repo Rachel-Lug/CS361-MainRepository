@@ -23,7 +23,7 @@ void flowers()
 	cin >> plentyChoices;
 	plentyChoices = toupper(plentyChoices);
 
-	while (plentyChoices != 'E' && plentyChoices != 'M') {
+	while (plentyChoices != 'E' && plentyChoices != mainMenu) {
 		cout << "Invalid entry. enter here: ";
 		cin >> plentyChoices;
 		plentyChoices = toupper(plentyChoices);
@@ -32,7 +32,7 @@ void flowers()
 	if (plentyChoices == 'E') {
 		return;
 	}
-	else if (plentyChoices == 'M') {
+	else if (plentyChoices == mainMenu) {
 		main();
 	}
 }

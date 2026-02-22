@@ -21,7 +21,7 @@ void beach()
 	cin >> somewhereValue;
 	somewhereValue = toupper(somewhereValue);
 
-	while (somewhereValue != 'E' && somewhereValue != 'M') {
+	while (somewhereValue != 'E' && somewhereValue != mainMenu) {
 		cout << "Invalid entry. enter here: ";
 		cin >> somewhereValue;
 		somewhereValue = toupper(somewhereValue);
@@ -30,7 +30,7 @@ void beach()
 	if (somewhereValue == 'E') {
 		return;
 	}
-	else if (somewhereValue == 'M') {
+	else if (somewhereValue == mainMenu) {
 		main();
 	}
 }

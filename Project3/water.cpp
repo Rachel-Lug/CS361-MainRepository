@@ -22,7 +22,7 @@ void openwater()
 	cin >> Val;
 	Val = toupper(Val);
 
-	while (Val != 'E' && Val != 'M') {
+	while (Val != 'E' && Val != mainMenu) {
 		cout << "Invalid entry. enter here: ";
 		cin >> Val;
 		Val = toupper(Val);
@@ -31,7 +31,7 @@ void openwater()
 	if (Val == 'E') {
 		return;
 	}
-	else if (Val == 'M') {
+	else if (Val == mainMenu) {
 		main();
 	}
 }

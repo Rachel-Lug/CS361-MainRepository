@@ -84,6 +84,9 @@
     <ClCompile Include="water.cpp">
       <Filter>Source Files\OceanFiles\sailing</Filter>
     </ClCompile>
+    <ClCompile Include="Settings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="universalValues.h">
