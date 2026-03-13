@@ -5,10 +5,50 @@
 #include "json.hpp"
 #include "universalValues.h"
 #include "GameFunctions.h"
+#include "httplib.h"
 
 using namespace std;
 char someUsersValHere;
 using json = nlohmann::json;
+
+string getTimestampFromPythonMS(const string& controlFilePath = "C:\\Users\\rache\\source\\repos\\DateTimeService\\control.json") {
+    // Step 1: write the request
+    json request;
+    request["op"] = "now";
+    ofstream out(controlFilePath);
+    out << request.dump(4);
+    out.close();
+
+    // Step 2: poll for response
+    json response;
+    while (true) {
+        ifstream in(controlFilePath);
+        if (!in) {
+            this_thread::sleep_for(chrono::milliseconds(100));
+            continue;
+        }
+
+        string content((istreambuf_iterator<char>(in)), istreambuf_iterator<char>());
+        in.close();
+
+        if (content.empty()) {
+            this_thread::sleep_for(chrono::milliseconds(100));
+            continue;
+        }
+
+        response = json::parse(content, nullptr, false);
+        if (response.is_discarded()) {
+            this_thread::sleep_for(chrono::milliseconds(100));
+            continue;
+        }
+
+        if (response.contains("result") && response["result"].contains("datetime")) {
+            return response["result"]["datetime"];
+        }
+
+        this_thread::sleep_for(chrono::milliseconds(100));
+    }
+}
 
 void TrophiesMenu()
 {
@@ -55,33 +95,45 @@ void TrophiesMenu()
             cout << "All Endings: " << total << "/8" << endl;
             trophyFile << "All Endings: " << total << "/8" << endl;
 
+            string timestamp = getTimestampFromPythonMS("C:/Users/rache/source/repos/DateTimeService/control.json");
+
+            trophyFile << "Timestamp: " << timestamp << "\n";
+
             trophyFile.close();
 //=================================================================================================
             char sendEmail;
             string userEmail;
 
             cout << "\nWould you like your achievements emailed to you? (Y/N): ";
-            cin >> sendEmail;
-            sendEmail = toupper(sendEmail);
+        cin >> sendEmail;
+        sendEmail = toupper(sendEmail);
 
-            if (sendEmail == 'Y')
-            {
-                cout << "Enter your email address: ";
-                cin >> userEmail;
+        if (sendEmail == 'Y')
+        {
+            cout << "Enter your email address: ";
+            cin >> userEmail;
 
-                json request;
 
-                request["fromEmail"] = "rachelluginbill27@gmail.com";
-                request["appPassword"] = "amkxpkekexvgkiip";
-                request["toEmail"] = userEmail;
-                request["file"] = "trophies.txt";
+            ifstream inFile("trophies.txt");
+            string trophiesContent((istreambuf_iterator<char>(inFile)), istreambuf_iterator<char>());
+            inFile.close();
 
-                ofstream reqFile("requests/email_request.json");
-                reqFile << request.dump(4);
-                reqFile.close();
+            json request;
+            request["fromEmail"] = "rachelluginbill27@gmail.com";
+            request["appPassword"] = "amkxpkekexvgkiip";
+            request["toEmail"] = userEmail;
+            request["body"] = trophiesContent;  // send the trophies content
 
-                cout << "Email request sent to microservice.\n";
+            // Create HTTP client and POST request to microservice
+            httplib::Client cli("localhost", 8080);
+            auto res = cli.Post("/send-email", request.dump(), "application/json");
+
+            if (res) {
+                cout << "Microservice response: " << res->body << endl;
+            } else {
+                cout << "Error: Could not connect to microservice.\n";
             }
+        }
 
             cout << "To exit enter " << exitGameOption
                 << ", to go back to the main menu enter " << mainMenu << ": ";
