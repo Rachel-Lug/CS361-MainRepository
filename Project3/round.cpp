@@ -20,18 +20,19 @@ void roundTheMount()
 	cout << "you figured you would walk up and investigate. The ashes light on fire and turn into a beautiful phoenix!" << endl;
 	cout << "but you were to close and you catch fire and die" << endl;
 	cout << "PHOENIX ENDING ACHIVED!" << endl;
+	completePhoenix = 1;
 
-	cout << "To exit enter E, to go back to the main menu enter M: ";
+	cout << "To exit enter" << exitGameOption << ", to go back to the main menu enter " << mainMenu << ": ";
 	cin >> prefences;
 	prefences = toupper(prefences);
 
-	while (prefences != 'E' && prefences != mainMenu) {
+	while (prefences != exitGameOption && prefences != mainMenu) {
 		cout << "Invalid entry. enter here: ";
 		cin >> prefences;
 		prefences = toupper(prefences);
 	}
 
-	if (prefences == 'E') {
+	if (prefences == exitGameOption) {
 		return;
 	}
 	else if (prefences == mainMenu) {

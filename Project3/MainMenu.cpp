@@ -65,7 +65,7 @@ void main() {
             // load game logic
         }
         else if (userValue == trophiesMenu) {
-            // trophies logic
+			TrophiesMenu();
         }
         else if (userValue == settingsMenu) {
             SettingsMenu();  

@@ -24,18 +24,19 @@ void openwater()
 	cout << "they push you down deeper into the water and eventually you drown and die." << endl;
 
 	cout << "SIREN ENDING ACHIVED!" << endl;
+	completeSirens = 1;
 
-	cout << "To exit enter E, to go back to the main menu enter M: ";
+	cout << "To exit enter" << exitGameOption << ", to go back to the main menu enter " << mainMenu << ": ";
 	cin >> Val;
 	Val = toupper(Val);
 
-	while (Val != 'E' && Val != mainMenu) {
+	while (Val != exitGameOption && Val != mainMenu) {
 		cout << "Invalid entry. enter here: ";
 		cin >> Val;
 		Val = toupper(Val);
 	}
 
-	if (Val == 'E') {
+	if (Val == exitGameOption) {
 		return;
 	}
 	else if (Val == mainMenu) {

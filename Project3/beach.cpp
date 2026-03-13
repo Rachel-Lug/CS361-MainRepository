@@ -23,18 +23,19 @@ void beach()
 	cout << "You don't have time to move out of the way and you are crushed to death" << endl;
 
 	cout << "LOCHNESS MONSTER ACHIVED!" << endl;
+	completeNessie = 1;
 
-	cout << "To exit enter E, to go back to the main menu enter M: ";
+	cout << "To exit enter" << exitGameOption << ", to go back to the main menu enter " << mainMenu << ": ";
 	cin >> somewhereValue;
 	somewhereValue = toupper(somewhereValue);
 
-	while (somewhereValue != 'E' && somewhereValue != mainMenu) {
+	while (somewhereValue != exitGameOption && somewhereValue != mainMenu) {
 		cout << "Invalid entry. enter here: ";
 		cin >> somewhereValue;
 		somewhereValue = toupper(somewhereValue);
 	}
 
-	if (somewhereValue == 'E') {
+	if (somewhereValue == exitGameOption) {
 		return;
 	}
 	else if (somewhereValue == mainMenu) {

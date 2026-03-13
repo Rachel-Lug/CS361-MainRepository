@@ -22,18 +22,19 @@ void woods()
 	cout << "Your stomach starts to hurt, you fall to the ground. You have discovered the white stag! but you die of dysentery" << endl;
 
 	cout << "WHITE STAG ENDING ACHIVED!" << endl;
+	completeStag = 1;
 
-	cout << "To exit enter E, to go back to the main menu enter M: " << endl;
+	cout << "To exit enter" << exitGameOption << ", to go back to the main menu enter " << mainMenu << ": ";
 	cin >> decision;
 	decision = toupper(decision);
 
-	while (decision != 'E' && decision != mainMenu) {
+	while (decision != exitGameOption && decision != mainMenu) {
 		cout << "Invalid entry. enter here: ";
 		cin >> decision;
 		decision = toupper(decision);
 	}
 
-	if (decision == 'E') {
+	if (decision == exitGameOption) {
 		return;
 	}
 	else if (decision == mainMenu) {

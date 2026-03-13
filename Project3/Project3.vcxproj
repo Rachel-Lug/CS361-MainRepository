@@ -35,15 +35,13 @@
     <ClCompile Include="Settings.cpp" />
     <ClCompile Include="struct.cpp" />
     <ClCompile Include="Summit.cpp" />
+    <ClCompile Include="TrophiesMenu.cpp" />
     <ClCompile Include="universalValues.cpp" />
     <ClCompile Include="water.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameFunctions.h" />
     <ClInclude Include="universalValues.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="README.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

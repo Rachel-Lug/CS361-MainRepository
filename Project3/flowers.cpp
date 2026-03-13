@@ -24,19 +24,19 @@ void flowers()
 	cout << "They are fairies! However you were suffocated by the poisonous pollen." << endl;
 
 	cout << "FAIRY ENDING ACHIVED!" << endl;
+	completeFairies = 1;
 
-
-	cout << "To exit enter E, to go back to the main menu enter M: ";
+	cout << "To exit enter" << exitGameOption << ", to go back to the main menu enter " << mainMenu << ": ";
 	cin >> plentyChoices;
 	plentyChoices = toupper(plentyChoices);
 
-	while (plentyChoices != 'E' && plentyChoices != mainMenu) {
+	while (plentyChoices != exitGameOption && plentyChoices != mainMenu) {
 		cout << "Invalid entry. enter here: ";
 		cin >> plentyChoices;
 		plentyChoices = toupper(plentyChoices);
 	}
 
-	if (plentyChoices == 'E') {
+	if (plentyChoices == exitGameOption) {
 		return;
 	}
 	else if (plentyChoices == mainMenu) {

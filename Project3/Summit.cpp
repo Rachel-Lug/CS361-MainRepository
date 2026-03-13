@@ -21,17 +21,19 @@ void upTheMount()
 	cout << "He knocks you off the side of the mountain and you fall to your death." << endl;
 
 	cout << "JERSEY DEVIL ENDING ACHIVED!" << endl;
-	cout << "To exit enter E, to go back to the main menu enter M: ";
+	completeJersey = 1;
+
+	cout << "To exit enter" << exitGameOption << ", to go back to the main menu enter " << mainMenu << ": ";
 	cin >> usersDecision;
 	usersDecision = toupper(usersDecision);
 
-	while (usersDecision != 'E' && usersDecision != mainMenu) {
+	while (usersDecision != exitGameOption && usersDecision != mainMenu) {
 		cout << "Invalid entry. enter here: ";
 		cin >> usersDecision;
 		usersDecision = toupper(usersDecision);
 	}
 
-	if (usersDecision == 'E') {
+	if (usersDecision == exitGameOption) {
 		return;
 	}
 	else if (usersDecision == mainMenu) {

@@ -24,18 +24,18 @@ void cave()
 	cout << "NANDI BEAR ENDING ACHIVED!" << endl;
 	completeNandi = 1;
 
-	cout << "To exit enter E, to go back to the main menu enter M: " << endl;
+	cout << "To exit enter" << exitGameOption << ", to go back to the main menu enter " << mainMenu << ": ";
 	cin >> userDecision;
 	userDecision = toupper(userDecision);
 
 
-	while (userDecision != 'E' && userDecision != mainMenu) {
+	while (userDecision != exitGameOption && userDecision != mainMenu) {
 		cout << "Invalid entry. enter here: ";
 		cin >> userDecision;
 		userDecision = toupper(userDecision);
 	}
 	
-	if (userDecision == 'E') {
+	if (userDecision == exitGameOption) {
 		return;
 	}
 	else if (userDecision == mainMenu) {

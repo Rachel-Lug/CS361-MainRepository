@@ -23,19 +23,19 @@ void structure()
 	cout << "The Kracken keeps you as a pet and you eventually die of old age all alone." << endl;
 
 	cout << "KRACKEN ENDING ACHIVED!" << endl;
+	completeKracken = 1;
 
-
-	cout << "To exit enter E, to go back to the main menu enter M: ";
+	cout << "To exit enter" << exitGameOption << ", to go back to the main menu enter " << mainMenu << ": ";
 	cin >> someVal;
 	someVal = toupper(someVal);
 
-	while (someVal != 'E' && someVal != mainMenu) {
+	while (someVal != exitGameOption && someVal != mainMenu) {
 		cout << "Invalid entry. enter here: ";
 		cin >> someVal;
 		someVal = toupper(someVal);
 	}
 
-	if (someVal == 'E') {
+	if (someVal == exitGameOption) {
 		return;
 	}
 	else if (someVal == mainMenu) {
