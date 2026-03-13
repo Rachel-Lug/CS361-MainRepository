@@ -18,6 +18,9 @@ void main();
 //settings menu
 void SettingsMenu();
 
+//trophies menu
+void TrophiesMenu();
+
 //--------------------------------------------------------------------------------------------------
 //introduction/plot
 void GameIntro();

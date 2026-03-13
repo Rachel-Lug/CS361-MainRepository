@@ -22,6 +22,8 @@ void cave()
 	cout << "A huge bear from legend! You discovered a Nandi bear! It mauls you to death." << endl;
 
 	cout << "NANDI BEAR ENDING ACHIVED!" << endl;
+	completeNandi = 1;
+
 	cout << "To exit enter E, to go back to the main menu enter M: " << endl;
 	cin >> userDecision;
 	userDecision = toupper(userDecision);
