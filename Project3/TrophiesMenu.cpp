@@ -72,9 +72,9 @@ void TrophiesMenu()
                 json request;
 
                 request["fromEmail"] = "rachelluginbill27@gmail.com";
+                request["appPassword"] = "amkxpkekexvgkiip";
                 request["toEmail"] = userEmail;
-                request["subject"] = "Your Game Achievements";
-                request["bodyFile"] = "trophies.txt";
+                request["file"] = "trophies.txt";
 
                 ofstream reqFile("requests/email_request.json");
                 reqFile << request.dump(4);

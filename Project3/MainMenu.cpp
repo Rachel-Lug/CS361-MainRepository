@@ -20,7 +20,7 @@ using namespace std;
 
 char userValue;
 
-void main() {
+int main() {
         //clear screen
     #ifdef _WIN32
         system("cls");
@@ -77,4 +77,5 @@ void main() {
         cout << endl;  
     }
 
+    return 0;
 }

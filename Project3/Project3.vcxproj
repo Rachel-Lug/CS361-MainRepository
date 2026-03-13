@@ -40,6 +40,7 @@
     <ClCompile Include="water.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\Downloads\json.hpp" />
     <ClInclude Include="GameFunctions.h" />
     <ClInclude Include="universalValues.h" />
   </ItemGroup>

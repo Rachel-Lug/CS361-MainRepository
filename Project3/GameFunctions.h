@@ -13,7 +13,7 @@ Every choice has its own file.*/
 //}
 
 //main menu
-void main();
+int main();
 
 //settings menu
 void SettingsMenu();
