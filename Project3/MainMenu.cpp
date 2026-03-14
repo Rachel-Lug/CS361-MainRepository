@@ -38,7 +38,6 @@ int main() {
 		cout << "Please select an option from the menu below: " << endl;
 
         cout << "New Game (" << newGameOption << ") " << endl;
-        cout << "Load Game (" << loadGameOption << ") " << endl;
         cout << "Trophies (" << trophiesMenu << ") " << endl;
         cout << "Settings (" << settingsMenu << ") " << endl;
         cout << "Exit (" << exitGameOption << ") " << endl;
@@ -48,11 +47,11 @@ int main() {
         userValue = toupper(userValue);
 
         // validate entry
-        while (userValue != newGameOption && userValue != loadGameOption &&
+        while (userValue != newGameOption &&
             userValue != settingsMenu && userValue != exitGameOption &&
             userValue != trophiesMenu) {
             cout << "Invalid entry. Please enter " << newGameOption << ", "
-                << loadGameOption << ", " << trophiesMenu << ", "
+                << trophiesMenu << ", "
                 << settingsMenu << ", " << exitGameOption << endl;
             cin >> userValue;
             userValue = toupper(userValue);
@@ -60,9 +59,6 @@ int main() {
 
         if (userValue == newGameOption) {
             GameIntro();
-        }
-        else if (userValue == loadGameOption) {
-            // load game logic
         }
         else if (userValue == trophiesMenu) {
 			TrophiesMenu();
